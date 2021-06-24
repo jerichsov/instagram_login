@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap Instagram</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0%;
+            box-sizing: border-box;
+            /* border: 0.5px solid black; */
+        }
+        
+        body{
+            background-color: rgb(226, 226, 226);
+        }
+        #form-outer-container a{text-decoration: none;
+}
+        /*------ MAİN-----*/
+        #form-inner-container{
+            /* border: 1px solid black; */
+            margin: auto;
+            width: 460px;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        /* first form*/
+        #first-form{
+            /* border: 1px solid black; */
+            background-color: white;
+            margin-bottom: 20px ;
+            padding: 25px 35px;
+            text-align: center;
+        }
+
+        #first-form h1{
+            font-family: 'Grand Hotel', cursive;
+            font-size: 60px;
+            /* border: 1px solid black; */
+            line-height: 100px;
+            color: rgba(0, 0, 0, 0.9);
+        }
+
+        #first-form input{
+            display: block;
+            width: 100%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            border-radius: 3px;
+            border: 1px solid black;
+            background-color: rgb(200, 200, 200);
+            /* border: 1px solid rgb(200, green, blue); */
+
+        }
+
+        #first-form input:nth-of-type(1){
+            padding: 15px 10px;
+            margin-top: 40px;
+        }
+        #first-form input:nth-of-type(2) {
+            padding: 18px 10px;
+        }
+
+        #signin-btn{
+            display: block;
+            text-align: center;
+            margin: auto;
+            border: 1px none black;
+            width: 100%;
+            height: 30px;
+            background-color: rgb(0, 150, 250,0.8);
+            border-radius: 5px;
+            color: white;
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        #çizgili {
+  display: flex;
+  flex-direction: row;
+  color: gray;
+}
+#çizgili:before, #çizgili:after{
+  content: "";
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+#çizgili:before {
+  margin-right: 10px;
+}
+#çizgili:after {
+  margin-left: 10px;
+}
+
+/* Ya da nın altı */
+
+#signin-span{
+    text-decoration: none;
+    color: rgb(57, 81, 133);
+    display: block;
+    margin-top: 30px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: -0.5px;
+}
+#forget-passw{
+    text-decoration: none;
+    color: black;
+    display: block;
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+        /* second form*/
+        #second-form{
+            border: 1px solid black;
+            background-color: white;
+            margin-bottom: 20px;
+            text-align: center;
+            padding: 30px;
+            font-size: 15px;
+        }
+        #second-form a{
+            text-decoration: none;
+            color: rgb(102, 102, 255);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+
+        }
+        /* third form*/
+        #third-form {
+            text-align: center;
+            font-size: 17px;
+            margin-top: 40px;
+            }
+        #third-form div{
+            margin: 15px;
+
+        }
+        
+
+        /* -------FOOTER-------*/
+
+        #form-footer{
+            text-align: center;
+        }
+        #form-footer ul{
+            text-align: center;
+            list-style: none;
+            display: block;
+            margin: auto;
+        }
+        #form-footer li{
+            float: left;
+            margin:0 10px;
+        }
+        #form-footer a{
+            text-decoration: none;
+            color: black;
+        }
+        #cpright{
+            clear: both;
+            padding: 20px;
+            color: black;
+        }
+        #cpright{
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="form-outer-container">
+        <!-------------- MAİN ----------------->
+        <main id="form-inner-container">
+
+        <!-------------- first form----------------->
+
+            <div id="first-form">
+                <h1> Instagram </h1>
+                <form action="#" method="POST">
+                <input type="text" name="username" id="username" 
+                placeholder="Telefon numarası kullanıcı adı ya da e-posta">
+                <br>
+                <input type="password" name="passwd" id="passwd"
+                placeholder="Şifre">
+                <br>
+                <button type="button" id="signin-btn" >Giriş Yap</button>
+                </form>
+
+                <p id="çizgili">ya da</p>
+                <div>
+                    <a href="#" id="signin-span">
+                    <img src="" alt="">
+                    <span≈>Facebook ile giriş yap</span>
+                    </a>
+                </div>
+                <div>
+                    <a href="#" id="forget-passw">şifreni mi unuttun</a>
+                </div>
+
+
+            </div>
+
+
+        <!-------------- MAİN ----------------->
+
+            <div id="second-form">
+                <p>Hesabın yok mu? <a href="#">Kaydol</a> </p>
+
+            </div>
+    
+    
+        <!-------------- MAİN ----------------->
+
+            <div id="third-form">
+                <p>Uygulamayı indir</p>
+                <div>
+                    <a href="#">
+                        <img src="./30b29fd697b2.png" alt="ios">
+                    </a>
+                    <a href="#">
+                        <img src="./andro.png" alt="android">
+                    </a>
+
+                </div>
+
+            </div>
+
+        </main>
+        <!-------------- FOOTER ----------------->
+
+        <footer id="form-footer">
+            <div>
+                <ul>
+                    <li> <a href="#"> Hakkında</a></li>
+                    <li> <a href="#"> Blog</a></li>
+                    <li> <a href="#"> İş Fırsatları</a></li>
+                    <li> <a href="#"> Yardım</a></li>
+                    <li> <a href="#"> API</a></li>
+                    <li> <a href="#"> Gizlilik</a></li>
+                    <li> <a href="#"> Koşullar</a></li>
+                    <li> <a href="#"> Başlıca Hesaplar</a></li>
+                    <li> <a href="#"> Konu Etiketleri</a></li>
+                    <li> <a href="#"> Konumlar</a></li>
+                    
+                </ul>
+            </div>
+            <div id="cpright">
+                <select name="" id="">
+                    <option value="Türkçe"> Türkçe </option>
+                    <option value="English"> English</option>
+                </select>
+                <span> CPR 2021 Instagram from facebook</span>
+            </div>
+
+        </footer>
+    </div>
+    
+</body>
+</html>
